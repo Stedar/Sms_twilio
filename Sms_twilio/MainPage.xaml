@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sms_twilio.MainPage">
+
+    <StackLayout Margin="20,35,20,20">
+        <Entry x:Name="PhoneEntry"
+               Placeholder="Enter phone number" />
+        <Button Text="Send SMS with OTP code"
+                Clicked="OnSendButtonClicked" />
+        <Entry x:Name="OTPEntry"
+               Placeholder="Add OTP code" />
+        <Button Text="Ok"
+                Clicked="OnOTPButtonClicked" />
+        <Label x:Name="result_OTP" Text="......" HorizontalTextAlignment="Center"/>
+
+    </StackLayout>
+
+</ContentPage>
